@@ -13,145 +13,163 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-        <nav class="flex items-center justify-between">
-            <div class="left flex items-center">
-                <div class="branding">
-                    <img src="./images/logo.svg" >
-                </div>
-                <div>
-                    <a href="#">Home</a>
-                    <a href="#about">About</a>
-                    <a href="#education">Education</a>
-                    <a href="#projects">Projects</a>
-                </div>
-            </div>
-            <div class="right">
-                <button class="btn btn-primary">Contact</button>
-            </div>
-        </nav>
-
-        <div class="hero flex items-center justify-between">
-            <div class="left flex-1 flex justify-center">
-               <img src="./images/RushikeshKate-cutout.png" alt="">
-            </div>
-            <div class="right flex-1">
-               <h6>Rushikesh Kate</h6>
-               <h1>I'm  a Frontend <span>Developer</span> </h1>
-               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam veritatis atque maxime repellat! Hic distinctio 
-                omnis vero, esse maxime veritatis dignissimos. Obcaecati est reiciendis eaque exercitationem doloribus. Illum,
-                 eum deleniti.</p>
-                 <div>
-                     <button class="btn btn-secondary">DOWNLOAD CV</button>
-                 </div>
-            </div>
+    <div class="site-main-wrapper overflow-x hidden">
+        <button class="hamberger">
+            <img src="./images/icons8-menu (1).svg" alt="">
+        </button>
+        <div class="mobile-nav">
+            <button class="times"> <img src="./images/icons8-close-window-50.png" alt=""></button>
+             <ul>
+                 <li><a href="#">Home</a></li>
+                 <li><a href="#about">About</a></li>
+                 <li><a href="#education">Education</a></li>
+                 <li><a href="#projects">Projects</a></li>
+             </ul>
         </div>
-    </div>
-    </header>
-
-    <section id="about" class="about">
-        <div class="container flex items-center">
-            <div class="flex-1">
-                <img class="about-me-img" src="./images/ex-dp.jpg" >
-            </div>
-            <div class="flex-1">
-                <h1>About <span>Me</span></h1>
-                <h3>Hello! I'm Rushikesh Kate</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse unde, ullam possimus tenetur expedita quo, 
-                    consequuntur distinctio debitis quibusdam, asperiores ipsum. Ex provident ipsa atque voluptatibus nobis quod 
-                    maxime facilis?</p>
-                <div class="social">
-                    <a href="#"><img src="./images/icons8-facebook (1).svg"></a>
-                    <a href="#"><img src="./images/icons8-twitter.svg"></a>
-                    <a href="#"><img src="./images/icons8-instagram.svg"></a>
-                    <a href="#"><img src="./images/icons8-linkedin.svg"></a>
+        <header>
+            <div class="container overflow-x hidden">
+            <nav id="main-nav" class="flex items-center justify-between">
+                <div class="left flex items-center">
+                    <div class="branding">
+                        <img src="./images/logo.svg" >
+                    </div>
+                    <div>
+                        <a href="#">Home</a>
+                        <a href="#about">About</a>
+                        <a href="#education">Education</a>
+                        <a href="#projects">Projects</a>
+                    </div>
+                </div>
+                <div class="right">
+                    <button class="btn btn-primary">Contact</button>
+                </div>
+            </nav>
+    
+            <div class="hero flex items-center justify-between hero-col">
+                <div class="left flex-1 flex justify-center">
+                   <img src="./images/RushikeshKate-cutout.png" alt="">
+                </div>
+                <div class="right flex-1">
+                   <h6>Rushikesh Kate</h6>
+                   <h1>I'm  a Frontend <span>Developer</span> </h1>
+                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam veritatis atque maxime repellat! Hic distinctio 
+                    omnis vero, esse maxime veritatis dignissimos. Obcaecati est reiciendis eaque exercitationem doloribus. Illum,
+                     eum deleniti.</p>
+                     <div>
+                         <button class="btn btn-secondary">DOWNLOAD CV</button>
+                     </div>
                 </div>
             </div>
         </div>
-    </section>
-    <section id="education" class="Education">
-       <div class="container">
-           <h1 class="section-heading">
-               <span>Education</span>/Skills
-           </h1>
-           <div class="card-wrapper">
-               <div class="card">
-                   <img src="./images/icons8-education-100-blue.png">
-                   <h2>Education</h2>
-                   <p>10th:90.80%<br>
-                      12th:72.92%<br>
-                      B.E :68.50%
-                   </p>
+        </header>
+    
+        <section id="about" class="about">
+            <div class="container flex items-center about-inner-wrap">
+                <div class="flex-1">
+                    <img class="about-me-img" src="./images/devguy3.gif" >
+                </div>
+                <div class="flex-1 right">
+                    <h1>About <span>Me</span></h1>
+                    <h3>Hello! I'm Rushikesh Kate</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse unde, ullam possimus tenetur expedita quo, 
+                        consequuntur distinctio debitis quibusdam, asperiores ipsum. Ex provident ipsa atque voluptatibus nobis quod 
+                        maxime facilis?</p>
+                    <div class="social">
+                        <a href="#"><img src="./images/icons8-facebook (1).svg"></a>
+                        <a href="#"><img src="./images/icons8-twitter.svg"></a>
+                        <a href="#"><img src="./images/icons8-instagram.svg"></a>
+                        <a href="#"><img src="./images/icons8-linkedin.svg"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="education" class="Education">
+           <div class="container">
+               <h1 class="section-heading">
+                   <span>Education</span>/Skills
+               </h1>
+               <div class="card-wrapper">
+                   <div class="card">
+                       <img src="./images/icons8-education-100-blue.png">
+                       <h2>Education</h2>
+                       <p>10th:90.80%<br>
+                          12th:72.92%<br>
+                          B.E :68.50%
+                       </p>
+                   </div>
+    
+                   <div class="card">
+                    <img src="./images/icons8-c++-100.png">
+                    <h2>Skills</h2>
+                    <p>C++/C
+                    </p>
+                </div>
+    
+                <div class="card">
+                    <img src="./images/icons8-java-100.png">
+                    <h2>Skills</h2>
+                    <p>JAVA
+                    </p>
+                </div>
+    
+                <div class="card">
+                    <img src="./images/icons8-html-5-100.png">
+                    <h2>Skills</h2>
+                    <p>HTML5
+                    </p>
+                </div>
+    
+                <div class="card">
+                    <img src="./images/icons8-css-100.png">
+                    <h2>Skills</h2>
+                    <p>CSS
+                    </p>
+                </div>
+    
+                <div class="card">
+                    <img src="./images/icons8-sql-100.png">
+                    <h2>Skills</h2>
+                    <p>SQL
+                    </p>
+                </div>
                </div>
-
-               <div class="card">
-                <img src="./images/icons8-c++-100.png">
-                <h2>Skills</h2>
-                <p>C++/C
-                </p>
-            </div>
-
-            <div class="card">
-                <img src="./images/icons8-java-100.png">
-                <h2>Skills</h2>
-                <p>JAVA
-                </p>
-            </div>
-
-            <div class="card">
-                <img src="./images/icons8-html-5-100.png">
-                <h2>Skills</h2>
-                <p>HTML5
-                </p>
-            </div>
-
-            <div class="card">
-                <img src="./images/icons8-css-100.png">
-                <h2>Skills</h2>
-                <p>CSS
-                </p>
-            </div>
-
-            <div class="card">
-                <img src="./images/icons8-sql-100.png">
-                <h2>Skills</h2>
-                <p>SQL
-                </p>
-            </div>
            </div>
-       </div>
-    </section>
-    <section id="projects" class="work">
-        <div class="container">
-            <h1 class="section-heading">Projects</h1>
-            <div class="card-wrapper">
-                <div class="card">
-                    <h2>Line Follower</h2>
-                    <p>how line Follower <br> works basic </p>
-                </div>
-                <div class="card">
-                    <h2>Wall Follower</h2>
-                    <p>how wall Follower <br> works basic </p>
-                </div>
-                <div class="card">
-                    <h2>Home Automation</h2>
-                    <p>how line Follower <br> works basic </p>
+        </section>
+        <section id="projects" class="work">
+            <div class="container">
+                <h1 class="section-heading">Projects</h1>
+                <div class="card-wrapper">
+                    <div class="card">
+                        <h2>Line Follower</h2>
+                        <p>how line Follower <br> works basic </p>
+                    </div>
+                    <div class="card">
+                        <h2>Wall Follower</h2>
+                        <p>how wall Follower <br> works basic </p>
+                    </div>
+                    <div class="card">
+                        <h2>Home Automation</h2>
+                        <p>how line Follower <br> works basic </p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <footer>
-        <img class="footer-logo" src="./images/logo.svg">
-        <div class="footer-socials">
-                    <a href="#"><img src="./images/icons8-facebook (1).svg"></a>
-                    <a href="#"><img src="./images/icons8-twitter.svg"></a>
-                    <a href="#"><img src="./images/icons8-instagram.svg"></a>
-                    <a href="#"><img src="./images/icons8-linkedin.svg"></a>
-        </div>
-        <div class="copyright">
-            Copyright 2021. All right Reserved
-        </div>
-    </footer>
+        </section>
+        <footer>
+            <img class="footer-logo" src="./images/logo.svg">
+            <div class="footer-socials">
+                        <a href="#"><img src="./images/icons8-facebook (1).svg"></a>
+                        <a href="#"><img src="./images/icons8-twitter.svg"></a>
+                        <a href="#"><img src="./images/icons8-instagram.svg"></a>
+                        <a href="#"><img src="./images/icons8-linkedin.svg"></a>
+            </div>
+            <div class="copyright">
+                Copyright 2021. All right Reserved
+            </div>
+        </footer>
+    </div>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <!--<script type="text/javascript" src="slick/slick.min.js"></script> -->
+    <script src="./js/App.js"></script>
 </body>
 </html>

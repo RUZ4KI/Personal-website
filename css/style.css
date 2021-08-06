@@ -8,6 +8,8 @@
     
 }
 
+
+
 *{
     padding: 0;
     margin: 0;
@@ -22,7 +24,7 @@ body{
 
 header{
     background: var(--dark);
-    clip-path: polygon(0 0,100% 0,100% 100%,70% 89%,0 100%);
+    /* clip-path: polygon(0 0,100% 0,100% 100%,70% 89%,0 100%); */
 }
 
 .container{
@@ -30,6 +32,30 @@ header{
     padding: 0 15px;
     margin: 0 auto;
 
+}
+
+@media (min-width:576px) {
+    .container{
+        max-width: 540px;
+    }
+}
+
+@media (min-width:768px) {
+    .container{
+        max-width: 720px;
+    }
+}
+
+@media (min-width:992px) {
+    .container{
+        max-width: 960px;
+    }
+}
+
+@media (min-width:1200px) {
+    .container{
+        max-width: 1152px;
+    }
 }
 
 header nav .left a{
@@ -53,7 +79,7 @@ header nav .branding{
 }
 
 .hero .left img{
-     width: 400px; 
+     width: 400px;  
 }
 
 .hero .right{
@@ -91,8 +117,8 @@ header nav .branding{
     padding: 6rem 0;
 }
 
- .about-me-img img{
-    height: 200px;
+.about  .about-me-img {
+    height: 450px;
     
 }
 
@@ -114,7 +140,7 @@ header nav .branding{
 
 .about p{
     font-family:'Lato',sans-serif ;
-    line-height: 1.9;
+    line-height: 1.8;
     margin-bottom: 2rem;
 }
 
@@ -280,5 +306,142 @@ html{
     
 }
 
+
+
+.site-main-wrapper{
+    position: relative;
+}
+
+.hamberger{
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    z-index: 11;
+    background:none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: none;
+}
+
+.hamberger img{
+    width: 30px;
+}
+
+.mobile-nav{
+   position: fixed;
+   top: 0;
+   left: 0;
+   z-index: 1001;
+   background: var(--light);
+   width: 100%;
+   height: 100%;
+   padding: 2rem;
+   padding-top: 5rem;
+   transform: translateX(-100%);
+   transition: all .5s ease-in-out;
+}
+
+.open{
+    transform: translateX(0);
+}
+
+.times{
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    border: none;
+    background: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.mobile-nav ul{
+  list-style-type: none;
+}
+
+.mobile-nav ul li a{
+    color: var(--dark);
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+@media (max-width:1024px) {
+    header #main-nav{
+        display: none;
+    }
+    .hamberger{
+        display: block;
+    }
+
+    .hero .left img{
+        width: 260px;
+    }
+
+    .hero .right h1{
+        font-size: 3rem;
+    }
+
+    .hero{
+        padding-top: 10rem;
+    }
+
+    header{
+        clip-path: polygon(0 0,100% 0,100% 100%,70% 100%,0 100%);
+    }
+
+    .about .about-me-img {
+        height: 370px;
+    }
+
+    section.Education .card-wrapper {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .work .card-wrapper {
+        grid-template-columns: repeat(1,1fr);
+
+    }
+}
+
+@media(max-width:576px) {
+    .hero {
+        flex-direction: column;
+        width: 100%;
+    }
+   /* .hero-col{
+        flex-direction: column;
+    }*/
+    
+    .hero .right{
+        position: absolute;
+        top:260px;
+        padding: 0 1rem;
+        background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.9));
+    }
+
+    .hero .left{
+        margin-top: -5rem;
+        margin-right: -9rem;
+        padding-bottom:3rem ;
+    }
+
+    .about-inner-wrap{
+        flex-direction: column;
+    }
+
+    .about .right{
+        text-align: center;
+        margin-top: 2rem;
+    }
+
+    .about .right .social{
+        justify-content: center;
+    }
+
+    section{
+        padding: 4rem 0;
+    }
+}
 
 
